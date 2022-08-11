@@ -1,0 +1,66 @@
+{
+    "bsonType": "object",
+    "required": [],
+    "permission": {
+        "read": true,
+        "create": true,
+        "update": true,
+        "delete": true
+    },
+    "properties": {
+        "_id": {
+            "description": "ID，系统自动生成"
+        },
+        "aram_current_version": {
+            "bsonType": "string"
+        },
+        "aram_version_file": {
+            "bsonType": "string"
+        },
+        "aram_week_file": {
+            "bsonType": "string"
+        },
+        "nexus_current_version": {
+            "bsonType": "string"
+        },
+        "nexus_version_file": {
+            "bsonType": "string"
+        },
+        "nexus_week_file": {
+            "bsonType": "string"
+        },
+        "oneforall_current_version": {
+            "bsonType": "string"
+        },
+        "oneforall_version_file": {
+            "bsonType": "string"
+        },
+        "oneforall_week_file": {
+            "bsonType": "string"
+        },
+        "ultbook_current_version": {
+            "bsonType": "string"
+        },
+        "ultbook_version_file": {
+            "bsonType": "string"
+        },
+        "ultbook_week_file": {
+            "bsonType": "string"
+        },
+        "urf_current_version": {
+            "bsonType": "string"
+        },
+        "urf_version_file": {
+            "bsonType": "string"
+        },
+        "urf_week_file": {
+            "bsonType": "string"
+        },
+        "last_update": {
+            "bsonType": "number"
+        },
+        "current_mode": {
+            "bsonType": "string"
+        }
+    }
+}
