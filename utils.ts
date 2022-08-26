@@ -74,6 +74,7 @@ export async function updateModeChange() {
                     .replace(/( |&#39|\.|;)/g, "")
                 if (championName === "Nunu&ampWillump") championName = "Nunu"
                 if (championName === "Wukong") championName = "MonkeyKing"
+                if (championName === "RenataGlasc") championName = "Nilah"
                 const [damageDealtString, damageReceivedString] = change.match(/<td>.*?<\/td>/g)!.map(value => value.slice(4, -5))
                 const damageDealt = damageDealtString ? parseFloat(damageDealtString) : 0
                 const damageReceived = damageReceivedString ? parseFloat(damageReceivedString) : 0
@@ -170,7 +171,7 @@ export async function updateModeInfo({ version, mode: { name, code }, modeChange
 
     const modeChangeChampionNameList = Object.keys(modeChange)
 
-    log(`开始获取${versionName} 的 ${name} 模式所有英雄数据`)
+    log(`开始获取 ${versionName} 的 ${name} 模式所有英雄数据`)
 
     const modeChampionInfo: ModeChampionInfo = {}
 
@@ -315,5 +316,5 @@ export async function updateModeInfo({ version, mode: { name, code }, modeChange
 
     fs.writeFileSync(`./data/${name}_${version === "7" ? "week" : "version"}.json`, JSON.stringify(saveInfo))
 
-    log(`已经完成${versionName} 的 ${name} 模式数据更新`)
+    log(`已经完成 ${versionName} 的 ${name} 模式数据更新`)
 }
